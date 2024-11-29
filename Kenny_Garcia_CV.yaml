@@ -8,7 +8,7 @@ cv:
     - network: LinkedIn
       username: yourusername
     - network: GitHub
-      username: yourusername
+      username: bebopkenny
   sections:
     welcome_to_RenderCV!:
       - '[RenderCV](https://github.com/sinaatalay/rendercv) is
@@ -28,29 +28,28 @@ cv:
       - bullet: '[Here](https://docs.rendercv.com/user_guide/),
           you can find a comprehensive user guide for RenderCV.'
     education:
-      - institution: University of Pennsylvania
+      - institution: California State University Fullerton
         area: Computer Science
-        degree: BS
-        start_date: 2000-09
-        end_date: 2005-05
+        degree: Bachelor of Science
+        start_date: 2023-09
+        end_date: 2026-12
         highlights:
           - 'GPA: 3.9/4.0 ([a link to somewhere](https://example.com))'
           - '**Coursework:** Computer Architecture, Comparison
             of Learning Algorithms, Computational Theory'
     experience:
-      - company: Apple
-        position: Software Engineer
-        location: Cupertino, CA
-        start_date: 2005-06
-        end_date: 2007-08
+      - company: Coding Minds Academey
+        position: Programming Instructor
+        location: Irvine, CA
+        start_date: 2024-11
+        end_date: present
         highlights:
-          - Reduced time to render user buddy lists by 75% by
-            implementing a prediction algorithm
-          - Integrated iChat with Spotlight Search by creating
-            a tool to extract metadata from saved chat transcripts
-            and provide metadata to a system-wide search database
-          - Redesigned chat file format and implemented backward
-            compatibility for search
+          - Empowered K-12 students to develop programming skills through hands-on projects, 
+            leading to improved problem-solving and creativity 
+          - Enhanced student engagement and understanding by teaching coding concepts in Python, JavaScript, and Scratch, 
+            increasing class satisfaction scores by 20% (Y), using interactive coding exercises and real-world applications 
+          - Created a positive learning environment fostering student confidence and curiosity, leading to success in national coding competitions and 
+            Ivy League placements through personalized mentoring and curriculum adaptation.
       - company: Microsoft
         position: Software Engineer Intern
         location: Redmond, WA
@@ -99,7 +98,7 @@ cv:
           - 'Tools Used: C'
     technologies:
       - label: Languages
-        details: C++, C, Java, Objective-C, C#, SQL, JavaScript
+        details: C++, Python, JavaScript, x86 Assembly
       - label: Technologies
         details: .NET, Microsoft SQL Server, XCode, Interface
           Builder
