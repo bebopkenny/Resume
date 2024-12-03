@@ -3,18 +3,18 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=2 cm, % seperation between body and page edge from the top
-    bottom=2 cm, % seperation between body and page edge from the bottom
+    top=0.5 cm, % seperation between body and page edge from the top
+    bottom=0 cm, % seperation between body and page edge from the bottom
     left=2 cm, % seperation between body and page edge from the left
     right=2 cm, % seperation between body and page edge from the right
-    footskip=1.0 cm, % seperation between body and footer
+    footskip=0.0 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
-\usepackage[explicit]{titlesec} % for customizing section titles
+\usepackage{titlesec} % for customizing section titles
 \usepackage{tabularx} % for making tables with fixed width columns
 \usepackage{array} % tabularx requires this
 \usepackage[dvipsnames]{xcolor} % for coloring text
-\definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
+\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
 \usepackage{enumitem} % for customizing lists
 \usepackage{fontawesome5} % for using icons
 \usepackage{amsmath} % for math
@@ -44,35 +44,19 @@
     \usepackage{lmodern}
 \fi
 
-\usepackage[default, type1]{sourcesanspro} 
+\usepackage{charter}
 
 % Some settings:
+\raggedright
 \AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
 \pagestyle{empty} % no header or footer
 \setcounter{secnumdepth}{0} % no section numbering
 \setlength{\parindent}{0pt} % no indentation
 \setlength{\topskip}{0pt} % no top skip
 \setlength{\columnsep}{0.15cm} % set column seperation
-\makeatletter
-\let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
-\patchcmd{\ps@customFooterStyle}{\thepage}{
-    \color{gray}\textit{\small Kenny Garcia - Page \thepage{} of \pageref*{LastPage}}
-}{}{} % replace number by desired string
-\makeatother
-\pagestyle{customFooterStyle}
+\pagenumbering{gobble} % no page numbering
 
-\titleformat{\section}{
-    % avoid page braking right after the section title
-    \needspace{4\baselineskip}
-    % make the font size of the section title large and color it with the primary color
-    \Large\color{primaryColor}
-}{
-}{
-}{
-    % print bold title, give 0.15 cm space and draw a line of 0.8 pt thickness
-    % from the end of the title to the end of the body
-    \textbf{#1}\hspace{0.15cm}\titlerule[0.8pt]\hspace{-0.1cm}
-}[] % section title formatting
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
 
 \titlespacing{\section}{
     % left space:
@@ -85,18 +69,19 @@
     0.2 cm
 } % section title spacing
 
-% \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
 \newenvironment{highlights}{
     \begin{itemize}[
         topsep=0.10 cm,
         parsep=0.10 cm,
         partopsep=0pt,
         itemsep=0pt,
-        leftmargin=0.4 cm + 10pt
+        leftmargin=0 cm + 10pt
     ]
 }{
     \end{itemize}
 } % new environment for highlights
+
 
 \newenvironment{highlightsforbulletentries}{
     \begin{itemize}[
@@ -110,12 +95,11 @@
     \end{itemize}
 } % new environment for highlights for bullet entries
 
-
 \newenvironment{onecolentry}{
     \begin{adjustwidth}{
-        0.2 cm + 0.00001 cm
+        0 cm + 0.00001 cm
     }{
-        0.2 cm + 0.00001 cm
+        0 cm + 0.00001 cm
     }
 }{
     \end{adjustwidth}
@@ -135,7 +119,7 @@
 \newenvironment{threecolentry}[3][]{
     \onecolentry
     \def\thirdColumn{#3}
-    \setcolumnwidth{1 cm, \fill, 4.5 cm}
+    \setcolumnwidth{, \fill, 4.5 cm}
     \begin{paracol}{3}
     {\raggedright #2} \switchcolumn
 }{
@@ -145,7 +129,7 @@
 } % new environment for three column entries
 
 \newenvironment{header}{
-    \setlength{\topsep}{0pt}\par\kern\topsep\centering\color{primaryColor}\linespread{1.5}
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
 }{
     \par\kern\topsep
 } % new environment for the header
@@ -153,10 +137,10 @@
 \newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
   \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
     \put(
-        \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
-        \LenToUnit{\paperheight-1.0 cm}
+        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
+        \LenToUnit{\paperheight-0.25 cm}
     ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in November 2024}\hspace{\widthof{Last updated in November 2024}}
+        \small\color{gray}\textit{Last updated in December 2024}\hspace{\widthof{Last updated in December 2024}}
     }}}%
   }%
 }%
@@ -174,130 +158,189 @@
         \ignorespaces
     }
     \newsavebox\ANDbox
-    \sbox\ANDbox{}
+    \sbox\ANDbox{$|$}
 
-    \placelastupdatedtext
     \begin{header}
-        \fontsize{30 pt}{30 pt}
-        \textbf{Kenny Garcia}
+        \fontsize{25 pt}{25 pt}\selectfont Kenny Garcia
 
-        \vspace{0.3 cm}
+        \vspace{5 pt}
 
         \normalsize
-        \mbox{{\footnotesize\faMapMarker*}\hspace*{0.13cm}Your Location}%
-        \kern 0.25 cm%
+        \mbox{{\footnotesize\faMapMarker*}\hspace*{0.13cm}Whittier, CA}%
+        \kern 5.0 pt%
         \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{mailto:youremail@yourdomain.com}{{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}youremail@yourdomain.com}}%
-        \kern 0.25 cm%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{mailto:kennygarcia15@yahoo.com}{{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}kennygarcia15@yahoo.com}}%
+        \kern 5.0 pt%
         \AND%
-        \kern 0.25 cm%
+        \kern 5.0 pt%
         \mbox{\hrefWithoutArrow{tel:+90-541-999-99-99}{{\footnotesize\faPhone*}\hspace*{0.13cm}0541 999 99 99}}%
-        \kern 0.25 cm%
+        \kern 5.0 pt%
         \AND%
-        \kern 0.25 cm%
+        \kern 5.0 pt%
         \mbox{\hrefWithoutArrow{https://yourwebsite.com/}{{\footnotesize\faLink}\hspace*{0.13cm}yourwebsite.com}}%
-        \kern 0.25 cm%
+        \kern 5.0 pt%
         \AND%
-        \kern 0.25 cm%
+        \kern 5.0 pt%
         \mbox{\hrefWithoutArrow{https://linkedin.com/in/yourusername}{{\footnotesize\faLinkedinIn}\hspace*{0.13cm}yourusername}}%
-        \kern 0.25 cm%
+        \kern 5.0 pt%
         \AND%
-        \kern 0.25 cm%
+        \kern 5.0 pt%
         \mbox{\hrefWithoutArrow{https://github.com/bebopkenny}{{\footnotesize\faGithub}\hspace*{0.13cm}bebopkenny}}%
     \end{header}
 
-    \vspace{0.3 cm - 0.3 cm}
+    \vspace{0.5 pt - 0.3 cm}
 
-
-    \section{Welcome to RenderCV!}
-
-
-
-        
-        \begin{onecolentry}
-            \href{https://github.com/sinaatalay/rendercv}{RenderCV} is a LaTeX-based CV/resume framework. It allows you to create a high-quality CV or resume as a PDF file from a YAML file, with \textbf{full Markdown syntax support} and \textbf{complete control over the LaTeX code}.
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{onecolentry}
-            The boilerplate content was inspired by \href{https://github.com/dnl-blkv/mcdowell-cv}{Gayle McDowell}.
-        \end{onecolentry}
-
-
-    
-    \section{Quick Guide}
-
-    \begin{onecolentry}
-        \begin{highlightsforbulletentries}
-
-
-        \item Each section title is arbitrary and each section contains a list of entries.
-
-        \item There are 7 unique entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
-
-        \item Select a section title, pick an entry type, and start writing your section!
-
-        \item \href{https://docs.rendercv.com/user_guide/}{Here}, you can find a comprehensive user guide for RenderCV.
-
-
-        \end{highlightsforbulletentries}
-    \end{onecolentry}
 
     \section{Education}
 
 
 
         
-        \begin{threecolentry}{\textbf{Bachelor of Science}}{
+        \begin{twocolentry}{
             Sept 2023 – Dec 2026
         }
-            \textbf{California State University Fullerton}, Computer Science
+            \textbf{California State University Fullerton}, Bachelor of Science in Computer Science\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
             \begin{highlights}
-                \item GPA: 3.9/4.0 (\href{https://example.com}{a link to somewhere})
                 \item \textbf{Coursework:} Computer Architecture, Comparison of Learning Algorithms, Computational Theory
             \end{highlights}
-        \end{threecolentry}
+        \end{onecolentry}
+
 
 
     
-    \section{Experience}
+    \section{Work Experience}
 
 
 
         
         \begin{twocolentry}{
-            Irvine, CA
-
-        Nov 2024 – present
+            Nov 2024 – present
         }
-            \textbf{Coding Minds Academey}, Programming Instructor
+            \textbf{Programming Instructor}, Coding Minds Academey -- Irvine, CA\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
             \begin{highlights}
                 \item Empowered K-12 students to develop programming skills through hands-on projects, leading to improved problem-solving and creativity
-                \item Enhanced student engagement and understanding by teaching coding concepts in Python, JavaScript, and Scratch, increasing class satisfaction scores by 20\% (Y), using interactive coding exercises and real-world applications
-                \item Created a positive learning environment fostering student confidence and curiosity, leading to success in national coding competitions and Ivy League placements through personalized mentoring and curriculum adaptation.
+                \item Enhanced student engagement and understanding by teaching coding concepts in Python, JavaScript, and Scratch, increasing class satisfaction scores by 20\%, using interactive coding exercises and real-world applications
+                \item Created a positive learning environment fostering student confidence and curiosity, leading to success in national coding competitions and Ivy League placements through personalized mentoring and curriculum adaptation
             \end{highlights}
-        \end{twocolentry}
+        \end{onecolentry}
+
+
+
+    
+    \section{Projects}
+
+
+
+        
+        \begin{twocolentry}{
+            Feb 2024
+        }
+            \textbf{CodeClimber} -- Fullerton, CA\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed Code Climber, a web application for tracking coding interview progress on platforms like LeetCode and HackerRank, enabling users to save solutions, problem prompts, and complexity details
+                \item Implemented the frontend using Next.js, HTML, and CSS, providing customizable user experiences and dynamic interface features to improve user engagement
+                \item Built the backend using ExpressJS to manage data storage and server functionality, enabling users to access and update their progress across multiple devices
+            \end{highlights}
+        \end{onecolentry}
 
 
         \vspace{0.2 cm}
 
         \begin{twocolentry}{
-            Redmond, WA
-
-        June 2003 – Aug 2003
+            June 2023
         }
-            \textbf{Microsoft}, Software Engineer Intern
-            \begin{highlights}
-                \item Designed a UI for the VS open file switcher (Ctrl-Tab) and extended it to tool windows
-                \item Created a service to provide gradient across VS and VS add-ins, optimizing its performance via caching
-                \item Built an app to compute the similarity of all methods in a codebase, reducing the time from $\mathcal{O}(n^2)$ to $\mathcal{O}(n \log n)$
-                \item Created a test case generation tool that creates random XML docs from XML Schema
-                \item Automated the extraction and processing of large datasets from legacy systems using SQL and Perl scripts
-            \end{highlights}
-        \end{twocolentry}
+            \textbf{SympToDialog} -- Irvine, CA\end{twocolentry}
 
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed an AI-powered chatbot for healthcare provider training, enhancing diagnostic skills in sensitive STI conversations, using JavaScript, Node.js, and OpenAI API for realistic dialogue generation
+                \item Built a scalable application architecture supporting real-time interaction and secure data management, leveraging Next.js and Firebase for seamless performance and user authentication
+                \item Collaborated on UI design in Figma, creating an intuitive and visually appealing interface that received positive feed back
+            \end{highlights}
+        \end{onecolentry}
+
+
+
+    
+    \section{Extracurricular Activities}
+
+
+
+        
+        \begin{twocolentry}{
+            Jan 2024 – present
+        }
+            \textbf{Association for Computing Machinery}, AI Officer -- Fullerton, CA\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Board member of the AI Team for ACM, actively organizing and leading workshops on algorithms, AI, and software development, with hands-on projects that simplify complex topics for students
+                \item Organized and conducted Python workshops, focusing on AI libraries such as NumPy, Pandas, and PyTorch, enabling students to apply these tools in real-world scenarios through interactive code-along sessions
+                \item Developed Google Colab worksheets to provide students with follow-along guides, enhancing their learning experience and offering a resource for future reference in projects and studies
+            \end{highlights}
+        \end{onecolentry}
+
+
+
+    
+    \section{Awards}
+
+
+
+        
+        \begin{twocolentry}{
+            June 2023
+        }
+            \textbf{Winner of Youtube Health Innovation Prize}, National Academies Hackathon\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed SympToDialog, an AI chatbot to train healthcare providers in STI diagnostics, improving confidence in taking sexual histories through diverse personas and AI technology using JavaScript, Node.js, and OpenAI API, earning the YouTube Health Innovation Prize solution using JavaScript, Node.js, and OpenAI API, earning the YouTube Health Innovation Prize
+            \end{highlights}
+        \end{onecolentry}
+
+
+
+    
+    \section{Skills}
+
+
+
+        
+        \begin{onecolentry}
+            \textbf{Programming:} C++, Python, JavaScript, x86 Assembly
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Frameworks \& Libraries:} React.js, Node.js, Express.js, Flask, jQuery, EJS
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Tools:} Git, Unix, JSON, API, GUI, Matplotlib
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Databases:} SQL, PostgreSQL
+        \end{onecolentry}
 
 
     
@@ -311,76 +354,18 @@
                 Jan 2004
             }
                 \textbf{3D Finite Element Analysis of No-Insulation Coils}
-
-                \vspace{0.10 cm}
-
-                \mbox{Frodo Baggins}, \mbox{\textbf{\textit{John Doe}}}, \mbox{Samwise Gamgee}
-                \vspace{0.10 cm}
-
-        \href{https://doi.org/10.1109/TASC.2023.3340648}{10.1109/TASC.2023.3340648}
             \end{twocolentry}
+
+            \vspace{0.10 cm}
+            
+            \begin{onecolentry}
+                \mbox{Frodo Baggins}, \mbox{\textbf{\textit{John Doe}}}, \mbox{Samwise Gamgee}
+
+                \vspace{0.10 cm}
+                
+        \href{https://doi.org/10.1109/TASC.2023.3340648}{10.1109/TASC.2023.3340648}
+        \end{onecolentry}
         \end{samepage}
-
-
-    
-    \section{Projects}
-
-
-
-        
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Multi-User Drawing Tool}
-            \begin{highlights}
-                \item Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard" with each person's edits synchronized
-                \item Tools Used: C++, MFC
-            \end{highlights}
-        \end{twocolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Synchronized Desktop Calendar}
-            \begin{highlights}
-                \item Developed a desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users
-                \item Tools Used: C\#, .NET, SQL, XML
-            \end{highlights}
-        \end{twocolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            2002
-        }
-            \textbf{Custom Operating System}
-            \begin{highlights}
-                \item Built a UNIX-style OS with a scheduler, file system, text editor, and calculator
-                \item Tools Used: C
-            \end{highlights}
-        \end{twocolentry}
-
-
-
-    
-    \section{Technologies}
-
-
-
-        
-        \begin{onecolentry}
-            \textbf{Languages:} C++, Python, JavaScript, x86 Assembly
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{onecolentry}
-            \textbf{Technologies:} .NET, Microsoft SQL Server, XCode, Interface Builder
-        \end{onecolentry}
 
 
     

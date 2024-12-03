@@ -1,80 +1,74 @@
 # Kenny Garcia's CV
 
 - Phone: +90 541 999 99 99
-- Email: [youremail@yourdomain.com](mailto:youremail@yourdomain.com)
-- Location: Your Location
+- Email: [kennygarcia15@yahoo.com](mailto:kennygarcia15@yahoo.com)
+- Location: Whittier, CA
 - Website: [yourwebsite.com](https://yourwebsite.com/)
 - LinkedIn: [yourusername](https://linkedin.com/in/yourusername)
 - GitHub: [bebopkenny](https://github.com/bebopkenny)
 
 
-# Welcome to RenderCV!
-
-[RenderCV](https://github.com/sinaatalay/rendercv) is a LaTeX-based CV/resume framework. It allows you to create a high-quality CV or resume as a PDF file from a YAML file, with **full Markdown syntax support** and **complete control over the LaTeX code**.
-
-The boilerplate content was inspired by [Gayle McDowell](https://github.com/dnl-blkv/mcdowell-cv).
-
-# Quick Guide
-
-- Each section title is arbitrary and each section contains a list of entries.
-- There are 7 unique entry types: *BulletEntry*, *TextEntry*, *EducationEntry*, *ExperienceEntry*, *NormalEntry*, *PublicationEntry*, and *OneLineEntry*.
-- Select a section title, pick an entry type, and start writing your section!
-- [Here](https://docs.rendercv.com/user_guide/), you can find a comprehensive user guide for RenderCV.
 # Education
 
 ## California State University Fullerton, Bachelor of Science in Computer Science
 
 - Sept 2023 – Dec 2026
-- GPA: 3.9/4.0 ([a link to somewhere](https://example.com))
 - **Coursework:** Computer Architecture, Comparison of Learning Algorithms, Computational Theory
 
-# Experience
+# Work Experience
 
 ## Coding Minds Academey, Programming Instructor
 
 - Nov 2024 – present
 - Irvine, CA
 - Empowered K-12 students to develop programming skills through hands-on projects, leading to improved problem-solving and creativity
-- Enhanced student engagement and understanding by teaching coding concepts in Python, JavaScript, and Scratch, increasing class satisfaction scores by 20% (Y), using interactive coding exercises and real-world applications
-- Created a positive learning environment fostering student confidence and curiosity, leading to success in national coding competitions and Ivy League placements through personalized mentoring and curriculum adaptation.
+- Enhanced student engagement and understanding by teaching coding concepts in Python, JavaScript, and Scratch, increasing class satisfaction scores by 20%, using interactive coding exercises and real-world applications
+- Created a positive learning environment fostering student confidence and curiosity, leading to success in national coding competitions and Ivy League placements through personalized mentoring and curriculum adaptation
 
-## Microsoft, Software Engineer Intern
+# Projects
 
-- June 2003 – Aug 2003
-- Redmond, WA
-- Designed a UI for the VS open file switcher (Ctrl-Tab) and extended it to tool windows
-- Created a service to provide gradient across VS and VS add-ins, optimizing its performance via caching
-- Built an app to compute the similarity of all methods in a codebase, reducing the time from $\mathcal{O}(n^2)$ to $\mathcal{O}(n \log n)$
-- Created a test case generation tool that creates random XML docs from XML Schema
-- Automated the extraction and processing of large datasets from legacy systems using SQL and Perl scripts
+## CodeClimber
 
+- Feb 2024
+- Fullerton, CA
+- Developed Code Climber, a web application for tracking coding interview progress on platforms like LeetCode and HackerRank, enabling users to save solutions, problem prompts, and complexity details
+- Implemented the frontend using Next.js, HTML, and CSS, providing customizable user experiences and dynamic interface features to improve user engagement
+- Built the backend using ExpressJS to manage data storage and server functionality, enabling users to access and update their progress across multiple devices
+
+## SympToDialog
+
+- June 2023
+- Irvine, CA
+- Developed an AI-powered chatbot for healthcare provider training, enhancing diagnostic skills in sensitive STI conversations, using JavaScript, Node.js, and OpenAI API for realistic dialogue generation
+- Built a scalable application architecture supporting real-time interaction and secure data management, leveraging Next.js and Firebase for seamless performance and user authentication
+- Collaborated on UI design in Figma, creating an intuitive and visually appealing interface that received positive feed back
+
+# Extracurricular Activities
+
+## AI Officer, Association for Computing Machinery
+
+- Jan 2024 – present
+- Fullerton, CA
+- Board member of the AI Team for ACM, actively organizing and leading workshops on algorithms, AI, and software development, with hands-on projects that simplify complex topics for students
+- Organized and conducted Python workshops, focusing on AI libraries such as NumPy, Pandas, and PyTorch, enabling students to apply these tools in real-world scenarios through interactive code-along sessions
+- Developed Google Colab worksheets to provide students with follow-along guides, enhancing their learning experience and offering a resource for future reference in projects and studies
+
+# Awards
+
+## National Academies Hackathon, Winner of Youtube Health Innovation Prize
+
+- June 2023
+- Developed SympToDialog, an AI chatbot to train healthcare providers in STI diagnostics, improving confidence in taking sexual histories through diverse personas and AI technology using JavaScript, Node.js, and OpenAI API, earning the YouTube Health Innovation Prize solution using JavaScript, Node.js, and OpenAI API, earning the YouTube Health Innovation Prize
+
+# Skills
+
+- Programming: C++, Python, JavaScript, x86 Assembly
+- Frameworks & Libraries: React.js, Node.js, Express.js, Flask, jQuery, EJS
+- Tools: Git, Unix, JSON, API, GUI, Matplotlib
+- Databases: SQL, PostgreSQL
 # Publications
 
 ## 3D Finite Element Analysis of No-Insulation Coils ([10.1109/TASC.2023.3340648](https://doi.org/10.1109/TASC.2023.3340648))
 - Jan 2004
 - Frodo Baggins, ***John Doe***, Samwise Gamgee
 
-# Projects
-
-## Multi-User Drawing Tool
-
-- [github.com/name/repo](https://github.com/sinaatalay/rendercv)
-- Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard" with each person's edits synchronized
-- Tools Used: C++, MFC
-
-## Synchronized Desktop Calendar
-
-- [github.com/name/repo](https://github.com/sinaatalay/rendercv)
-- Developed a desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users
-- Tools Used: C#, .NET, SQL, XML
-
-## Custom Operating System
-
-- 2002
-- Built a UNIX-style OS with a scheduler, file system, text editor, and calculator
-- Tools Used: C
-
-# Technologies
-
-- Languages: C++, Python, JavaScript, x86 Assembly
-- Technologies: .NET, Microsoft SQL Server, XCode, Interface Builder
