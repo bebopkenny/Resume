@@ -1,6 +1,6 @@
 # Kenny Garcia's CV
 
-- Phone: +90 541 999 99 99
+- Phone: +1 562 536 2101
 - Email: [kennygarcia15@yahoo.com](mailto:kennygarcia15@yahoo.com)
 - Location: Whittier, CA
 - Website: [yourwebsite.com](https://yourwebsite.com/)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.1)  2 DEC 2024 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.1)  2 DEC 2024 22:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -694,7 +694,7 @@ L3 programming layer <2024-03-14>
 Here is how much of TeX's memory you used:
  15114 strings out of 476002
  273007 string characters out of 5788363
- 1955496 words of memory out of 5000000
+ 1954496 words of memory out of 5000000
  37027 multiletter control sequences out of 15000+600000
  596877 words of font info for 69 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -716,7 +716,7 @@ ython3.13/site-packages/rendercv/renderer/tinytex-release/TinyTeX/texmf-dist/fo
 nts/type1/public/lm/lmsy10.pfb></Users/csuftitan/rendercv-venv/lib/python3.13/s
 ite-packages/rendercv/renderer/tinytex-release/TinyTeX/texmf-dist/fonts/type1/p
 ublic/lm/lmsy9.pfb>
-Output written on Kenny_Garcia_CV.pdf (2 pages, 103881 bytes).
+Output written on Kenny_Garcia_CV.pdf (2 pages, 104099 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  79 compressed objects within 1 object stream
