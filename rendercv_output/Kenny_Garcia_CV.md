@@ -43,7 +43,7 @@
 - Built a scalable application architecture supporting real-time interaction and secure data management, leveraging Next.js and Firebase for seamless performance and user authentication
 - Collaborated on UI design in Figma, creating an intuitive and visually appealing interface that received positive feed back
 
-# Extracurricular Activities
+# Leadership
 
 ## AI Officer, Association for Computing Machinery
 
@@ -66,9 +66,3 @@
 - Frameworks & Libraries: React.js, Node.js, Express.js, Flask, jQuery, EJS
 - Tools: Git, Unix, JSON, API, GUI, Matplotlib
 - Databases: SQL, PostgreSQL
-# Publications
-
-## 3D Finite Element Analysis of No-Insulation Coils ([10.1109/TASC.2023.3340648](https://doi.org/10.1109/TASC.2023.3340648))
-- Jan 2004
-- Frodo Baggins, ***John Doe***, Samwise Gamgee
-

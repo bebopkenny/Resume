@@ -9,6 +9,7 @@ cv:
       username: linkedin.com/in/kennygarcia15
     - network: GitHub
       username: bebopkenny
+      
   sections:
     education:
       - institution: California State University Fullerton
@@ -55,7 +56,7 @@ cv:
           - Collaborated on UI design in Figma, creating an intuitive and visually appealing interface that received positive
             feed back
 
-    extracurricular_activities:
+    leadership:
       - company: AI Officer
         position: Association for Computing Machinery
         location: Fullerton, CA
@@ -89,17 +90,6 @@ cv:
         details: Git, Unix, JSON, API, GUI, Matplotlib
       - label: Databases
         details: SQL, PostgreSQL
-
-
-
-    publications:
-      - title: 3D Finite Element Analysis of No-Insulation Coils
-        authors:
-          - Frodo Baggins
-          - '***John Doe***'
-          - Samwise Gamgee
-        doi: 10.1109/TASC.2023.3340648
-        date: 2004-01
 
 
 design:
