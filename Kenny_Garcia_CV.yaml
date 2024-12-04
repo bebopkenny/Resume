@@ -3,10 +3,10 @@ cv:
   location: Whittier, CA
   email: kennygarcia15@yahoo.com
   phone: tel+15625362101
-  website: https://yourwebsite.com/
+  website: https://bebopkenny.github.io/Portfolio/
   social_networks:
     - network: LinkedIn
-      username: yourusername
+      username: linkedin.com/in/kennygarcia15
     - network: GitHub
       username: bebopkenny
   sections:
@@ -17,8 +17,8 @@ cv:
         start_date: 2023-09
         end_date: 2026-12
         highlights:
-          - '**Coursework:** Computer Architecture, Comparison
-            of Learning Algorithms, Computational Theory'
+          - '**Coursework:** Data Structures, Algorithms, Operating Systems'
+
     work_experience:
       - company: Coding Minds Academey
         position: Programming Instructor
@@ -59,7 +59,7 @@ cv:
       - company: AI Officer
         position: Association for Computing Machinery
         location: Fullerton, CA
-        start_date: 2024-01
+        start_date: 2024-06
         end_date: present
         highlights:
           - Board member of the AI Team for ACM, actively organizing and leading workshops on algorithms, AI, and

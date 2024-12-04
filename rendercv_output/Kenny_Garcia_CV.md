@@ -3,8 +3,8 @@
 - Phone: +1 562 536 2101
 - Email: [kennygarcia15@yahoo.com](mailto:kennygarcia15@yahoo.com)
 - Location: Whittier, CA
-- Website: [yourwebsite.com](https://yourwebsite.com/)
-- LinkedIn: [yourusername](https://linkedin.com/in/yourusername)
+- Website: [bebopkenny.github.ioPortfolio](https://bebopkenny.github.io/Portfolio/)
+- LinkedIn: [linkedin.com/in/kennygarcia15](https://linkedin.com/in/linkedin.com/in/kennygarcia15)
 - GitHub: [bebopkenny](https://github.com/bebopkenny)
 
 
@@ -13,7 +13,7 @@
 ## California State University Fullerton, Bachelor of Science in Computer Science
 
 - Sept 2023 – Dec 2026
-- **Coursework:** Computer Architecture, Comparison of Learning Algorithms, Computational Theory
+- **Coursework:** Data Structures, Algorithms, Operating Systems
 
 # Work Experience
 
@@ -47,7 +47,7 @@
 
 ## AI Officer, Association for Computing Machinery
 
-- Jan 2024 – present
+- June 2024 – present
 - Fullerton, CA
 - Board member of the AI Team for ACM, actively organizing and leading workshops on algorithms, AI, and software development, with hands-on projects that simplify complex topics for students
 - Organized and conducted Python workshops, focusing on AI libraries such as NumPy, Pandas, and PyTorch, enabling students to apply these tools in real-world scenarios through interactive code-along sessions
