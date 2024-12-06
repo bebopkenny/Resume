@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.1)  4 DEC 2024 13:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.1)  5 DEC 2024 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -577,19 +577,19 @@ LaTeX Font Info:    ... okay on input line 155.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
-* v-part:(T,H,B)=(14.22636pt, 780.74362pt, 0.0pt)
+* h-part:(L,W,R)=(14.22636pt, 585.84227pt, 14.22636pt)
+* v-part:(T,H,B)=(5.69046pt, 783.58907pt, 5.69046pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=500.484pt
-* \textheight=780.74362pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-95.04362pt
+* \textwidth=585.84227pt
+* \textheight=783.58907pt
+* \oddsidemargin=-58.04362pt
+* \evensidemargin=-58.04362pt
+* \topmargin=-103.57953pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=0.0pt
-* \footskip=0.0pt
+* \footskip=2.84544pt
 * \marginparwidth=65.0pt
 * \marginparsep=11.0pt
 * \columnsep=4.26773pt
@@ -688,11 +688,11 @@ L3 programming layer <2024-03-14>
 Here is how much of TeX's memory you used:
  15104 strings out of 476002
  272852 string characters out of 5788363
- 1954496 words of memory out of 5000000
+ 1958496 words of memory out of 5000000
  37021 multiletter control sequences out of 15000+600000
  593176 words of font info for 66 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 75i,7n,79p,474b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,503b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/csuftitan/rendercv-venv/lib/python3.13/site-packages/rendercv/rendere
 r/tinytex-release/TinyTeX/texmf-dist/fonts/type1/public/fontawesome5/FontAwesom
 e5Brands-Regular.pfb></Users/csuftitan/rendercv-venv/lib/python3.13/site-packag
@@ -708,7 +708,7 @@ b/python3.13/site-packages/rendercv/renderer/tinytex-release/TinyTeX/texmf-dist
 /fonts/type1/public/lm/lmsy10.pfb></Users/csuftitan/rendercv-venv/lib/python3.1
 3/site-packages/rendercv/renderer/tinytex-release/TinyTeX/texmf-dist/fonts/type
 1/public/lm/lmsy9.pfb>
-Output written on Kenny_Garcia_CV.pdf (1 page, 95739 bytes).
+Output written on Kenny_Garcia_CV.pdf (1 page, 96134 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream

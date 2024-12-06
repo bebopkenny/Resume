@@ -19,6 +19,16 @@ cv:
         end_date: 2026-12
         highlights:
           - '**Coursework:** Data Structures, Algorithms, Operating Systems'
+    
+    skills:
+      - label: Programming                                
+        details: C++, Python, JavaScript, x86 Assembly
+      - label: Frameworks & Libraries
+        details: React.js, Node.js, Express.js, Flask, jQuery, EJS
+      - label: Tools
+        details: Git, Unix, JSON, API, GUI, Matplotlib
+      - label: Databases
+        details: SQL, PostgreSQL
 
     work_experience:
       - company: Coding Minds Academey
@@ -36,7 +46,7 @@ cv:
     
     projects:
       - name: CodeClimber
-        location: Fullerton, CA
+        location: A web app to track coding progress on LeetCode and HackerRank
         end_date: 2024-02
         highlights:
           - Developed Code Climber, a web application for tracking coding interview progress on platforms like LeetCode
@@ -46,7 +56,7 @@ cv:
           - Built the backend using ExpressJS to manage data storage and server functionality, enabling users to access
             and update their progress across multiple devices
       - name: SympToDialog
-        location: Irvine, CA
+        location: An AI-powered chatbot for healthcare training in STI diagnostics
         end_date: 2023-06
         highlights:
           - Developed an AI-powered chatbot for healthcare provider training, enhancing diagnostic
@@ -56,10 +66,9 @@ cv:
           - Collaborated on UI design in Figma, creating an intuitive and visually appealing interface that received positive
             feed back
 
-    leadership:
-      - company: AI Officer
+    leadership and extracurriculars:
+      - company: Artificial Intelligence  Officer
         position: Association for Computing Machinery
-        location: Fullerton, CA
         start_date: 2024-06
         end_date: present
         highlights:
@@ -69,27 +78,22 @@ cv:
             enabling students to apply these tools in real-world scenarios through interactive code-along sessions
           - Developed Google Colab worksheets to provide students with follow-along guides, enhancing their learning
             experience and offering a resource for future reference in projects and studies
-    
+      - company: Open Source Software Project Collaborator
+        position: Association for Computing Machinery
+        start_date: 2024-09
+        end_date: 2024-12
+        highlights: 
+          - Contributed to the ACM OSS team by developing the Hackathon page
+          - Enabled streamlined updates for future hackathons and showcased event history with detailed descriptions, director profiles, and flyers
+          - Used HTML, CSS, SvelteKit, and TypeScript, earning an award for enhancing the ACMCSUF web presence
+
+          
     awards:
       - company: National Academies Hackathon
         position: Winner of Youtube Health Innovation Prize
         end_date: 2023-06
         highlights: 
-          - Developed SympToDialog, an AI chatbot to train healthcare providers in STI diagnostics, improving confidence in 
-            taking sexual histories through diverse personas and AI technology using JavaScript, Node.js, and OpenAI API, earning 
-            the YouTube Health Innovation Prize
-            solution using JavaScript, Node.js, and OpenAI API, earning the YouTube Health Innovation Prize
-
-
-    skills:
-      - label: Programming 
-        details: C++, Python, JavaScript, x86 Assembly
-      - label: Frameworks & Libraries
-        details: React.js, Node.js, Express.js, Flask, jQuery, EJS
-      - label: Tools
-        details: Git, Unix, JSON, API, GUI, Matplotlib
-      - label: Databases
-        details: SQL, PostgreSQL
+          - Created SympToDialog, an AI chatbot for STI diagnostics, boosting provider confidence using JavaScript, Node.js, and OpenAI API, and earned the YouTube Health Innovation Prize
 
 
 design:
@@ -109,12 +113,12 @@ design:
   use_icons_for_connections: true
   margins:
     page:
-      top: 0.5 cm
-      bottom: 0 cm
-      left: 2 cm
-      right: 2 cm
+      top: 0.2 cm
+      bottom: 0.2 cm
+      left: 0.5 cm
+      right: 0.5 cm
     section_title:
-      top: 0.3 cm
+      top: 0.2 cm
       bottom: 0.2 cm
     entry_area:
       left_and_right: 0 cm
